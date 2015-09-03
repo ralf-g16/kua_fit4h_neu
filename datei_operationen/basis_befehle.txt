@@ -1,0 +1,13 @@
+cd
+
+mkdir
+
+ls
+
+cp
+
+rm
+ #löscht Dateien und Verzeichnisse
+ rm -rf
+  #-r rekursive: von hier an alle Verzeichnisse
+  #-f force: alles wird ohne Nachfrage gelöscht

@@ -1,0 +1,26 @@
+GITHUB.com
+	Registrieren und verifizieren
+		Username: ralf-g16
+		Password: <das übliche ;-)>
+		e-mail: cech96@web.de
+
+	neues Repository anlegen
+		z.B. FIT4H-KuA
+		Haken setzen bei README und Beschreibung hinzufügen
+
+HOST
+	mkdir ordnername	#Verzeichnis anlegen
+	cd kua_fit4h			#ins Verzeichnis wechseln
+	git init					#Initialisieren eines neuen GIT Repositorys
+	touch text.txt    #Erzeugen einer neuen Datei
+	git add text.txt  #Die Datei text.txt wird ins neue Repository aufgenommen, d.h. unter Versionsverwaltung gestellt.
+	
+	git commit -m 'Initialisierung' #Die neue Datei wird in den Bereich der Dateien geschoben, die mit dem Server
+																	#synchronisiert werden sollen
+
+	git remote add origin https://ralf-g16@github.com:ralf-g16/kua_fit4h.git 	#Das lokale Repository wird mit einem 
+																																						#öffentlichen Repository verbunden; es wird dem 
+																																						#bestehenden Github-Repository hinzugefügt
+
+	git push -u orign master 	#die Änderungen, die auf dem lokalen Repository durchgeführt wurden, werden mit dem Stand auf 
+														#dem Server verglichen und die neure Version wird auf dem Server gespeichert
