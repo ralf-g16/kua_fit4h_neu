@@ -1,13 +1,57 @@
 cd
+	#ermöglicht das Navigieren innrhalb des Dateisystems
+	cd..
+		navigiert eine Ebene im Pfad zurück
+	cd~ (~ = Tilde)
+		navigiert ins Homeverzeichnis des Benutzers
+	cd Dokumente
+		relativer Pfad: vom aktuellen Standort aus
+	cd /home/pan/Downloads
+		absoluter Pfad: von der Wurzel / des Dateisystems anfangend
 
 mkdir
+	mkdir verzeichnisname
+		#erzeugt ein Unterverzeichnis im aktuellen Verzeichnis
+	mkdir /home/pan/Dokumente/verzeichnis
+		#Verzeichnis im absoluter Pfadangabe erzeugt
+
+touch
+	touch datei_name
+		#erstellt im aktuellen Verzeichnis eine Datei
+touch /home/pan/Dokumente/dateiname
+		#Datei in absoluter Pfadangabe erzeugt
 
 ls
+	#erzeugt eine Verzeichnis- und Dateiausgabe
+	ls -lat
+		-a: alles anzeigen, auch die vesteckten Dateien u. Ordner 
+		-l: long, also viel Info
+		-t: sortiert nach Zeit, jüngstes Datum oben
 
-cp
+cp -copy
+	cp quelle ziel
+	cp datei01 datei02
+		#die existierende datei01 wird als datei02 im akuellen Verzeichnis neu erzeugt, oder überschrieben
+	cp datei01 ~/Dokumente/dateo02 
+		#die Datei wird in das Verzeichnis Dokumente kopiert
+	cp -r verzeichnis1 verzeichnis2
+		#beim Kopieren von Verzeichnissen muss der Schalter -r (rekursiv) angegeben werden. Dann wird ein Quell-Verzeichnis mit allen Unterordnern und Dateien an das Ziel kopiert
+	cp *.txt unterverzeichnis/
+		#kopiert alle Dateien mit der Endung .txt in das Ziel (unterverzeichnis)
+		#der Asterisk (*) steht für beliebig viele Zeichen
 
 rm
  #löscht Dateien und Verzeichnisse
  rm -rf
   #-r rekursive: von hier an alle Verzeichnisse
   #-f force: alles wird ohne Nachfrage gelöscht
+
+mv (move)
+	mv quelle ziel
+		#der Befehl wird zum umbenennen und zum verschieben von Dateien und Ordnern benutzt
+
+less
+	less datei_name
+		#zeigt die Datei dateiname seitenweise an.
+		#weiterblättern mit der Leertaste
+		#beenden mit q
