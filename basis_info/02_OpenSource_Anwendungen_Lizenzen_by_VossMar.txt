@@ -1,0 +1,158 @@
+Server-Software
+	# Keine dierekte Visualisierung, beabsichtigen Daten zu anderen Systemen weiterzuleiten.
+
+Desktop-Software
+	# Zur dierekten Anwendung gedacht, auch Client genannt
+
+Tools
+	# ausgelagerte Softwarepackete, die die Anwendung vereinfachen sollen
+
+shell
+	# anspruchsvolle tools, die Software-Code in ausführbaren umwandeln
+
+
+Appache
+	# Web-Server 
+nginx
+	# Web-Server (Unix-Kernels)
+
+E-Mail-Server
+	# 3 versch Aufgaben
+	MTA "Mail Transfer Agent"  
+		# ermittelt welcher Server die E-Mail erhalten soll
+		#Bsp. sendmail, Postfix, procmail
+		# benutzt zum versenden SMTP "Simple Mail Transfer Protocol"
+	MDA "Mail Delivery Agent"(Local Delivery Agent)
+		# Pflegt die Speicherung der Mails im Postfach
+	POP/IMAP-Server "Post Office Control/Internet Message Accsess Protocol"
+		# Kommunikationsprotokolle die einen Email-Client benutzen um Emails zu empfangen
+		# Bsp. Dovecot, Syrus IMAP
+
+Filesharing
+	Samba
+		# Kann wie eine Windows-Maschiene aussehen, und kann in Windows Domänen agieren
+	Netatalk
+		# Agiert wie ein Apple-File-Server
+
+NFS "Network File System"
+	# Ursprüngliches File-Share-Protokoll für UNIX
+	# Bestandteil des Kernels
+
+DNS
+	# Verzeichnisdienst, der Netzadressnamen in IP's wandelt
+
+LDAP "Lightweight Directory Accsess Protocol"
+	# Meistgenutzter Verzeichnisdienst
+	# Baumstruktur
+	# OpenLDAP meistvertretener Anbieter
+
+DHCP "Dynamic Host Configuration Protocol"
+	# Wartet auf Anfragen für IP-Adressen und vergibt diese
+
+Datenbanken
+	# Speichern Daten
+	# Bsp. MySQL, PostgreSQL
+
+
+Programme
+
+xWindow (x11)
+	# auf diesem läuft der Desktop, welches den X.org-Server benutzt
+
+Desktopumgebung
+	# Beinhaltet Anmeldebildschirme, Sitzungen, Dateimanager, und weitere Hilfsmittel
+	# Hauptsächliche Umgebunbgen: KDE und GNOME
+
+Window Manager
+	# Stellen Fenster und Symbole dar
+	# vereinfachte version der Desktopumgebung
+	# Bsp.-Programme: Compiz, FVWM, Enlightenment
+
+Office Suites
+	# Wichtige Programme zum Bearbeiten von Dokumenten, Tabellen und Präsentationen
+	# OpenOffice
+		# Entstanden aus StarOffice (Deutschland '99)
+	# LibreOffice
+		# in vielen Linux-Distributionen enthalten
+
+Webbrowser
+	# Firefox & GoogleCrome
+	# Schnelle Browser, viele Features, support für Entwickler
+
+E-Mail Client
+	# Beinalten POP/IMAP-Server, SMTP-Server und zeigen E-Mails lokal an
+	# Bsp.-Programme Thunderbird, Evolution (GNOME), KMail (KDE)
+	
+Bearbeitungsprogramme
+	# Bsp.-Programme Blender (3D Filmbearbeitung), BIMP (Bildbearbeitung), Audacity (Audiobearbeitung)
+
+
+Konsolenwerkzeuge
+
+Shell's
+	# Komandowerkzeug, welches Befehle annimmt und diese dem Kernel weitergibt
+	# 2 hauptsächlich benutzte Shellarten: 
+		# Bourne shell (heutzutage Bourne Again Shell [Bash]) / auf den meisten System schon eingebunden 
+		# C shell (heutzutage tee-cee-shell[tcsh])
+	# Weitere Shells: Korn shell (ksh) & zsh
+
+Text Editoren
+	# Zum Bearbeiten von Konfigurationsdatein
+	# 2 hauptsächlich benutzte Editoren:
+		# vi ( heutzutage vim) auf jedem Linux system
+		# emacs
+	# simplere Versionen: pico & nano
+	
+	
+Entwicklerwerkzeuge
+
+Programmiersprachen-Arten:
+	# interpreted (wird bei ausführung gewandelt)
+		# bitet mehr eigenschaften, als compiled-Sprachen
+		# oft weniger Code benötigt
+		# Der Übersetzter ist normalerweise in einer anderen Sprache geschrieben, meißtens C oder auch Java
+		#Bsp.-Sprache:
+			# Perl / ursprünglich für Text-bearbeitung / kann heutzutage aber auch alles
+			# Ruby / z.T. auch von Perl und Shell beeinflusst / macht komplexte Funktionen einfacher / erste Wahl für schwierige Web-Programme
+			# Python / macht schwierige Funktionen einfacher/ beinhaltet das Gerüst "Django", speziell für Web-Programme / oft an Hochschulen verwendet
+			# PHP / hauptsächlich gemacht für Webseiten / einfach zu lernen und auf fast allen Systemen verfügbar
+		
+	# compiled (wird geandelt und gespeichert)
+		# Bsp.-Sprache: 
+			# C (Linux) /nahe am Maschienencode / kurz und effizient
+			# C++ / mehr Objektorientiert
+			# Java /compiled erst für "Java Virtual Machine"
+				# JVM zum benutzen für Client notwendig
+				# Kann Programme simulieren, welche die CPU sonst nicht hat
+
+Bibliotheken
+	# Beinhalten gebräuchliche Funktionen, die der Entwickler benutzen kann
+	# Bsp.-Bibliotheken:
+		# ImageMagick / Funktionspacket für Bildbearbeitung
+		# OpenSSL / Funktionspacket zur Einbindung von Websiten (Protokolle;Verschlüsselungen)
+		# C library / Basis-Funktionspacket zum lesen und schreiben für Dateien
+
+
+Lizenzen 
+
+Closed source software 
+	# Eigentümer der Software ist der Entwickler 
+	# Benutzer erwerben Lizenz nur zum benutzen der Software 
+	# Geld fließt je nach Geschäftsmodell des Entwicklers 
+	# Bsp.-Software & Lizenz:
+		# Microsoft Windows / Microsoft erhebt intellektuellen Eigentum / "End User License Agreement" (EULA)  die Lizenz
+			# MS hält Quelltext unter Verschluss 
+			# Es wird nur der Maschienencode verteilt 
+			# Benutzern ist nur erlaubt, die Software zu installieren & benutzen, aber keine Kopien anzufertigen 
+
+Open source software
+	# Quelltext muss frei verfügbar sein
+	# Bsp.-Lizenzen:
+		# Gnu Public License version 2 (GPLv2)
+			# Erlaubt Benutzern u.A. Änderungen vorzunehmen, diese aber bei Veröffentlichung unter die gleiche Lizenz zu stellen 
+			# der Quellcode darf nicht für Geld verkauft werden
+		# Free and Open Source Software (FOSS) 
+			# Entwickler gibt das Recht ab zu entscheiden wie und wofür die Software verbreitet wird 
+			# Auch FLOSS (Free/Libre Open Source Software) / macht ausdrücklich klar, dass diese Software frei verwendet werden kann 
+		# Apache Foundation 
+			gg

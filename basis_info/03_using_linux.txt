@@ -1,0 +1,104 @@
+Einleitung
+
+bevor man ein Linux Admin wird, soll man sich gegenseitig verbessern/unterstützen
+dies bedeutet: 	-> viel Documentationen
+								-> viele Mailverkehr
+
+
+#GUI gegen Non GUI (GUI - Graphical User Interface/Mode)
+ 
+ -zwei verschiedene Möglichkeiten
+ GUI:
+ 	-Fenster verschieben/ Größe ändern
+ 	-Anwendungen mit grafischen Übersichten, einfachere Strukturierung
+ 	-Multifenster Möglichkeiten
+ 	-gleiche Programme mehrfach öffnen
+ 	-Ressourcenintensiv
+
+ Non-GUI:
+ 	-keine Fenster
+ 	-nur die Shell
+ 	-keine Multifenster Möglichkeiten
+ 	-alles Textbasiert
+ 	-spart Ressourcen
+
+MOTD - Message of the Day - Mitteilung vom Admin für Benutzer
+
+#Command Line - Teminal
+
+-a simple text input
+-bei Non-GUI: Standardoberfläche
+-GUI: Grafische Terminal Oberfäche
+	z.B. Terminator, Terminal, XTerm
+
+#Virtualization and Cloud Computing
+
+-multiuser operating system
+	-viele Benutzer können daran arbeiten ohne sich gegenseitig zu beeinflussen
+	-unpriviligierte Benutzer
+
+-Physikalischer Computer -> Host
+ -stellen virtuelle Maschinen bereit -> Clients
+
+ -Host Software wird Hypervisor genannt
+
+ -Virtualisiert funktioniert, da die meisten Hosts im idle 'rumdümpeln'
+ -Sie brauchen gute CPU's und viel RAM
+
+ -gut da:
+ 	-Snapshots
+ 	-können leicht neu gemacht werden
+
+ Cloud Computing
+
+ -nur verbindung zum Host / VM
+ -keinen physikalischen Zugriff
+ -es werden nur für Ressourcen bezahlt
+
+ #Using Linux for Work
+
+Open Office
+	-works with MS Office PDF
+LibreOffice
+
+Word Processor - e.g. Word
+-edit Documents, etc.
+
+Spreadsheets - Tabellenprogramm
+
+Presentation package - e.g. Powerpoint,
+
+Firefox / Chrome
+-Flash funktioniert nicht auf Linux
+
+#Keeping Your Linux Computer Safe
+
+-sicher durch: einmalige lange Kennwörter (mind. 10 Zeichen, aus Buchstaben, Nummern, etc.)
+-KeePassX - generiert Passwörter, wie Keepass
+
+-regelmäßige Updates - System - Software & Updates - Install now
+
+-Firewall
+	-gufw
+	-uncomplicated firewall
+	-bei AN (ON) - der gesamte Traffic wird geblockt - Regeln definieren
+
+-iptables
+
+#Protecting yourself
+
+Firefox Settings
+	-Privacy State
+		-Tracking: not wanted be tracked
+	-Cookies löschen beim schließen etc.
+
+TOR Browser
+	-The Onion Router
+	-Anonymes Internet
+
+Die bester Möglichkeit:
+Ändere deine Einstellung so, das du möglichst wenig Preis gibst
+
+
+
+
