@@ -1,0 +1,23 @@
+Die Konfiguartionsdateien liegen im Home-Verzeichnis des jeweiligen Benutzers.
+Obwohl es sich bei der Konsole um ein Distributionsüberfeifendes Programm handelt, sind die Konfigurationsdateien bei jeder Distribution unterschiedlich.
+
+.bash_history
+
+	-speichert die letzten 500 Befehle
+	- str + r + Befehl auf der Konsole ausgeben sucht den letzten so lautenden Befehl
+	-history -c löscht die Historie
+
+.bash_logout
+	
+	-wird nur vewendet, wenn der User über einen Login-Vorgang (Remote-Server) die Shell (Bash) geöffnet hat. Beim logout werden die Befehle der bash_logout ausgeführt.
+
+
+.bash_profile
+	-siehe bash_logout die Befehle werden beim login ausgeführt
+
+.bashrc
+	alias kua='cd /home/pan/Dokumente/kua'
+		source .bashrc	#die Datei neu laden
+		kua 						#navigiert zum Ordner
+
+	PATH	#definiert die Pfade zum Suchen ausführbarer Dateien
