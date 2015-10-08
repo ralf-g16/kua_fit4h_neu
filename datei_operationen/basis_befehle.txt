@@ -55,3 +55,52 @@ less
 		#zeigt die Datei dateiname seitenweise an.
 		#weiterblättern mit der Leertaste
 		#beenden mit q
+
+ln
+	ln quelle ziel
+		#Es wird mit dem Befehl ln ein Link auf eine Datei erzeugt
+		#Damit wird in der Inode-Table der Festplatte ein Verweis zwischen dem Namen <ziel> und der schon existierenden Datei <quelle> erzeugt
+		#Wird die Datei <ziel> geändert, ändert sich somit auch die Datei <quelle>
+		#HardLink
+		#Wird benötigt bei der Installation von komplexen Programmen. Es wird dann ein Verweis auf die Programme im System erstellt, die das zu installierende Programm benötigt
+
+ln -s quelle ziel
+		#symbolischer Link
+		#ein verzeichnis oder eine Quelle außerhalb der Festplatte können so integriert werden
+
+find
+	#der Befehl sucht und findet Dateien im Dateisystem
+
+	Platzhalter:
+			?			steht für ein beliebiges Zeichen
+			*			steht für beliebig viele Zeichen
+			[123] ein Zeichen das 1,2 oder 3 sein kann
+			[ab]	ein Zeichen, das a oder b sein kann
+			[a-d]	ein Zeichen innerhalb einer Range
+
+	Beispiele:
+		find datei?.txt
+			sucht im aktuellen verzeichnis nach einer datei die mit <datei> beginnt und anschließend ein beliebiges Zeichen hat und dann mit <.txt> endet
+
+		find verzeichnis -name datei.txt
+			#sucht im Verzeichnis <verzeichnis> nach genau dieser Datei
+
+		find /etc/ -name passwd -print 2>/dev/null
+			#im Verzeichnis /etc wird nach einer Datei mit dem Namen passwd gesucht. Die fehlermeldungen werden nach /dev/null (ins Nirvana) geschickt, also nicht ausgegeben
+
+grep
+	#Mit Hilfe dieses Befehls werden bestimmte Suchmuster in Dateien oder der Standardausgabe gefunden
+
+Beispiel:
+	lspci | grep VGA
+		#Von der Ausgabe der Hardwarekonfiguration (lspci) wird nach dem Suchmuster VGA gesucht
+
+		grep pan /etc/passwd
+			#in der Datei /etc/passwd wird nach dem Suchmuster: pan gesucht
+
+	grep '^[AS]' mrolympia.dat
+		#sucht am Anfang der Zeile nach (^) großem S oder A in der Datei mrolympia.dat
+
+	grep '\<Coleman\>' mrolympia.dat
+		#sucht nach dem ganzen Wort (Leerzeichen am Anfang und Ende) Coleman
+		
