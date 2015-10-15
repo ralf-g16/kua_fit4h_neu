@@ -1,0 +1,86 @@
+1. Erstellen Sie mit cat eine Datei Standorte und fuegen Sie folgende Orte hinzu:
+  Augsburg, 84341
+  Bremen, 25981
+  Friedrichshafen, 75544
+  Berlin 10000
+  Halle, 03035
+  Essen, 45678
+  Osnabrueck, 45679
+  Kempten, 78544
+
+  Du bist eine gemeine
+  Ganz Gemeine keine
+
+cat > standorte2.dat
+
+Augsburg, 84341
+  Bremen, 25981
+  Friedrichshafen, 75544
+  Berlin 10000
+  Halle, 03035
+  Essen, 45678
+  Osnabrueck, 45679
+  Kempten, 78544
+  Hambrg, 765as
+
+  Du bist eine gemeine
+  Ganz Gemeine keine
+
+2. Geben Sie alle Zeilen aus, in den ein kleines a vorkommt
+
+grep '[a]' standorte.dat
+  
+3.  Alle Zeilen, in den die Zeichenfolge hafen vorkommt
+
+grep '\hafen\>' standorte.dat
+  
+4. Alle Zeilen, bei denen der letzte Buchstabe ein n oder g ist
+
+grep '[ng]$' standorte.dat
+  
+5. Alle Zeilen, bei denen ein Grossbuchstabe zwischen H und M vorkommt
+  
+grep '[H-M]' standorte.dat 
+
+6. Alle Zeilen mit grossem B am Anfang
+
+grep '[B]' standorte.dat
+  
+7. Alle Zeilen mit einer 1 am Ende
+
+grep '[1]$' standorte.dat
+  
+8. Alle die im PLZ-Bereich 4567 liegen
+
+grep '4567.' standorte.dat
+  
+9. Alle die im PLZ Bereich 7 liegen
+
+grep '7....' standorte.dat 
+
+10. Alle in denen kein Komma vorkommt
+  
+grep -v ',' standorte.dat
+
+11. Wieviele Zeilen liegen im PLZ Bereich 7
+
+grep '7....' standorte.dat -c
+
+12. Fuegen Sie der Datei Standorte eine Leerzeile hinzu und finden sie Leerzeilen
+
+grep -c '^$' standorte.dat 
+
+13. Alle Zeilen mit “eine”, aber nur als ganzes Wort
+
+grep '\b eine\>' standorte.dat
+grep -w 'eine' standorte.dat
+  
+14. Zeige mit dem Befehl dmesg alle HDDs an
+
+dmesg | grep Disk
+
+dmesg | grep -E '(s|h)d[a-z]'
+
+15. Liste mit dem Befehl ps aux alle terminator Prozesse auf
+
+ps aux | grep teminator
