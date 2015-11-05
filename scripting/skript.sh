@@ -1,9 +1,10 @@
 #! /bin/bash
-mkdir verzeichnis
-touch verzeichnis/datei.txt
-echo "Dies ist der text" > verzeichnis/datei.txt
-cat verzeichnis/datei.txt
-who
-whoami
-pwd
-echo $HOME
+read -p "Geben Sie einen Dateinamen ein: " eingabe
+if [[ -e $eingabe ]]
+then
+	echo "Datei: ${eingabe} gefunden"
+else
+	echo "Datei: ${eingabe} nicht gefunden, wird jetzt erstellt."
+	touch $eingabe
+	ls -l
+fi

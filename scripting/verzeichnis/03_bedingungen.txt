@@ -1,0 +1,40 @@
+
+read -p "Geben sie ein B ein: " eingabe
+if [[ $eingabe == 'B' ]]
+then
+	echo "Gut gut..."
+elif [[ $eingabe == 'D' ]]
+then
+echo "Das war ein D - DÖ DÖ"
+else
+	echo "mhh?!"
+fi
+
+Bedingungen:
+STRING:
+ [[ $bed ]]						#gibt true wenn nicht leer
+ [[ $bed = "wert" ]]	#gibt true wenn Übereinstimmung
+
+ARITHMETRISCH
+	if  [[ $eingabe -eq 60]]			#überprüft auf Gleichheit
+	elif [[ $eingabe -gt 40 ]]		#überprüft ob größer als
+	elif [[ $eingabe -lt 20 ]]		#überprüft ob kleiner als
+	elif [[ $eingabe -ge 20 ]]		#überprüft auf größer gleich
+	elif [[ $eingabe -le 20 ]]		#überprüft auf kleiner gleich
+
+
+	#! /bin/bash
+
+read -p "Geben Sie Ihr Alter ein: " eingabe
+if [[ $eingabe -eq 60 ]]
+then
+	echo "young"
+elif [[ $eingabe -gt 40 ]]
+then
+	echo "old"
+elif [[ $eingabe -lt 20 ]]
+then
+	echo "Bestes Alter"
+else
+	echo "mhh?!"
+fi
